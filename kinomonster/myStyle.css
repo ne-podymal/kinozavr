@@ -1,0 +1,548 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"], input[type="password"], input[type='search'] {  /* пишем стиль для все рамок ввода */
+    color: #5d5d5d;
+    width:60%;
+    padding: 8px;
+}
+
+body {
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #555;
+}
+
+p {
+    padding: 0 0 20px 0;
+    line-height: 1.7em; /* межстрочный интервал */
+}
+
+input, textarea {
+    outline: none; /* в отличии от border не влияет на ширину эелемента, функционал такой же. Задаем для всех окошек ввода */
+    border: none;
+    border: solid 1px #f2f2f2
+}
+
+h1, h2 { 
+    font: normal 170% 'centry gotic', arial; /* задаем стили для все заголовков */
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+    color: #000;
+
+}
+
+h2 {
+    font-size: 140%; /* заголовок чуть меньше чем 1 ур. */
+}
+
+a, a:hover {
+    outline: none; /* стили все всех ссылок и псевдоссылок на сайте */
+    text-decoration:underline;
+    color: #aeb002;
+}
+
+ul {
+    margin: 2px 0 22px 17px;
+}
+
+ul li {
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+    line-height: 1.5em; /* высота строчки (отступ от строчки выше-ниже) */
+}
+
+.header {
+    background-color: darkslateblue;
+    height: 177px; /* высота блока */
+    font-size: 0.8em; /* размер текста */
+    margin-left: 0px;
+    margin-right: 0px; /* отступы слева, справа */
+    min-width: 900px; /* миним ширина */
+}
+
+.main, .logo, .menubar, .site__content, .footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    width: 880px;
+    padding-bottom: 40px;
+}
+
+.logo h1, .logo h2 {
+    font:normal 300% 'centry gothic', arial, sans-serif;
+    margin: 0 0 0 9px;
+}
+
+.logo__text h1, .logo__text h1 a, .logo__text h1 a:hover {  /* стиль лого-текста и ссылки */
+    padding: 22px 0 0 0;
+    color: #fff;
+    letter-spacing: 0.1em; /* интервал между символами */
+    text-decoration: none;
+}
+
+.logo__text h2 {
+    font-size: 0.9em ;
+    padding: 4px 0 0 0;
+    color: #999;
+
+}
+
+.menubar {
+    width: 980px;
+    height: 46px;
+}
+
+ul.menu {
+    float:right;  /* прижать к правому краю */
+}
+
+ul.menu li {
+    float: left;
+    padding: 0 0 0 9px;
+    list-style: none; /* Убрать точки у списка элементов */
+    margin: 1px 100px 0 0;
+}
+
+
+ul.menu li a {
+    font: normal 100% 'trebuchet ms', sans-serif;
+    display: block; /* превратить в блочный элемент */
+    height: 20px
+    padding 6px 35px 5px 28px;
+    color:#fff;
+    text-decoration: none;
+}
+
+ul.menu li.selected a {
+    color: #aeb002;
+}
+
+ul.menu li a:hover {
+    color: #e4ec04;
+}
+
+.site__content {
+    width: 880px;
+    overflow: hidden; /* скрыть то, что выходит за рамки */
+    margin: 20px auto 0 auto;
+    background-color: white;
+}
+
+.sidebar__container {
+    float: right;
+    width: 224px;
+}
+
+.sidebar {
+    float: right;
+    width: 222px;
+    padding: 5%;
+    margin: 0 0 16px 0;
+    border: solid 1px #f2f2f2; /* border -- рамка вокрут div solid -- тип рамки(прямая) толщина линии и цвет*/
+    border-radius: 5px; /* закруленные углы у рамки */
+    background: #f9f9f9;
+}
+
+.btn  {
+    padding: 8px;
+    background-color: white;
+    cursor: pointer; /*превращает курсор в лапку (для нажатия) */
+}
+
+.sidebar h2 {
+    color: #136cb2;
+}
+
+.lables__passred__text {
+    font-style: 0.7em;
+    margin-top: 3%;
+    margin-left: 2%;
+
+}
+
+.sidebar ul {
+    margin: 0;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+    margin: 0 0 0 0;
+}
+
+.sidebar .rating__sidebar {
+    float: right; 
+}
+ 
+hr { /* стиль для разделяющей полосы */
+    border: solid 1px #f3f3;  
+}
+.content {
+    text-align: left;
+    width: 620px;
+    padding: 0 0 0 5px;
+    float: left;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.films__block { /* отступ снизу */
+    margin-bottom: 5%;
+}
+
+.films__block img { 
+    border-radius: 5px;  /* скругленная рамка  */
+    border: solid 5px #dad7dd; /* толщина и цвет рамки   */
+    width: 22%;
+}
+
+.posts__content .posts {
+font-size: 0.8em;
+}
+
+.info__film--page {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.info__film--page .label {
+    font-size: 1.2em;
+}
+
+.info__film--page .value {
+    font-size: 1.em;
+    color: #49945a;
+    margin-right: 3%;
+}
+
+.description__film {
+    margin-bottom: 15%;
+}
+
+.description__film img { 
+    float: left; /* прижимаем к левому краю чтобы текст был сбоку */
+    margin-right: 2%;
+    border-radius: 5px; /* скругленная рамка + стриль рамки  */
+    border: solid 5px #dad7d5;
+
+}
+
+.review {
+    margin-bottom: 4%; 
+    font-size: 0,9em;
+}
+
+.reviews .review__name {
+    background-color: #7268AD;
+    color: white;
+    padding: 1%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .reviews .review__text {
+    padding-top: 2%;
+    padding-bottom: 2%; 
+    padding-left: 2%;
+  }
+
+.send {
+    margin-bottom: 10%;
+}
+
+.send input[type='text'], textarea { /* стиль для рамки ввода комментария  */
+    border: solid 1px #c3c3c3;
+    margin-bottom: 2%;
+}
+
+.send input[type='text'] {
+    width: 98%;
+    
+}
+
+.send textarea {
+    width: 624px;
+    height: 200px;
+}
+
+.send input[type="submit"] {
+    background-color: #7268ad;
+    padding: 3%;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.info__film {
+    margin-bottom: 5%;
+    background-color: #f9f9f9;
+    padding: 5%;
+    height: 270px;
+}
+
+.info__film img {
+    float: left;
+    margin-right: 2%;
+    border-radius: 5px;
+    border: solid 5px #dad7d5;
+    width: 25%;
+}
+
+.button { /* настройка кнопки -смотреть-   */
+    background-color: #7268ad;
+    padding: 2%;
+    color: white;
+    border-radius: 5px;
+    float: right;
+    margin-top: 5%;
+    clear: both; /*  выкл обтекание текста слева и справа. Чтобы кнопка всегда была снизу */
+    font-size: 0.8em;
+}
+
+.button a { /* настройка кнопки-ссылки -смотреть- цвет надписи   */
+    color:white;
+}
+
+table { /* настройка таблицы  */
+    width: 100%;
+    border: solid 1px #f4f4f4;
+}
+
+td {  /* настройка столбцов в табл.   */
+   padding: 2%;
+   border: solid 1px #f4f4f4;
+
+}
+
+td img { /* настройка картинки в табл.   */
+    width: 60px;
+    vertical-align: midle;
+}
+
+.center { /* созд. общий класс, который сможем применять к div   */
+    text-align: center;
+}
+
+.rating{
+font-weight: bold;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    padding: 28px 0 5px 0;
+    text-align: center;  /* размещение элемента в центре стр*/
+    background-color: darkslateblue;
+    color: #a8aa94;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 800px;
+}
+.footer a{ /* стили ссылок в футере*/
+    color: #a8aa94;
+    text-decoration: none;
+}
+
+.footer a:hover { /* поведение при наведении мыши*/
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer p {
+    padding: 0 0 10px 0;
+}
+
+/* contacnts*/
+
+.send__contacts {
+    margin-bottom: 10%;
+}
+
+.send__contacts h1 h2 {
+    font:normal 150% 'centry gothic', arial, sans-serif;
+    margin: 0 0 0 9px;
+}
+
+.send__contacts input[type='text'], textarea {
+    border: solid 1px #a8aa94;
+    border-radius: 2%;
+    margin-top: 7px;
+    padding: 7px;
+}
+
+.send__contacts textarea {
+width: 90%;
+height: 200px;
+}
+
+.send__contacts input[type='submit'] {
+    width: 20%;
+    height: 35px;
+    background-color: darkslateblue;
+    border-radius: 5%;
+    color: white;
+    margin: 1%;
+    font-size: 0.8em;
+}
+
+/* css mobile*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 880px) {
+
+.header {
+    background-color: rgb(39, 195, 201);
+    min-width: 100%;
+    height: 20%;
+    text-align: center; /* текст в цетре стр*/
+}
+
+.logo {
+    width: 100%;
+    height: min-content;
+}
+
+.site__content {
+    width: 100%;
+}
+
+.menubar {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+.site__content{
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar__container{
+    display: none;
+}
+
+.footer {
+    display: none;
+}
+
+ul.menu{
+    float: none; /* float значения которые были - выкл */
+    text-align: center;
+    margin-left: 25%;
+}
+
+ul.menu li {
+    margin-top: 2%;
+    padding: 0;
+    float: none;
+    
+}
+
+.logo h1 {
+    font: normal 235% 'centry gothic', arial, sans-serif;
+}
+
+.logo h2 {
+    font: normal 100% 'centry gothic', arial, sans-serif;
+    color: white;
+}
+
+.content h1,h2 {
+    font: normal 110% 'centry gothic', arial;
+}
+ 
+.films__block img {
+    width: 43%
+}
+
+.posts__content p {
+    line-height: 1.5em;
+    padding: 3%;
+    text-align: left;
+}
+
+.posts p {
+    font-size: 120%;
+}
+ /* films page */
+
+ .info__film {
+     float:none;
+     height: 100%;
+ }
+
+.info__film img {
+     width: 90%;
+     margin-bottom: 5%;
+ }
+
+ .button {
+     float:none;
+ }
+ /* rating page */
+
+ table {
+     display: block
+
+ }
+
+ th {
+     font-size: 75%;
+ }
+
+ td {
+     padding: 0;
+     margin: 0;
+     font-size: 95%;
+     text-align: left;
+ }
+
+ /* show page */
+
+.youtube {
+    width: 90%;
+    height: 100%;
+}
+
+.description__film {
+    width: 90%;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.description__film img {
+    float: none;
+    width: 73%;
+    display: block;
+    margin:0%;
+    padding:0;
+    margin-left: 11%;
+    margin-bottom: 7%;
+}
+
+.reviews {
+    text-align: left;
+    width: 95%;
+}
+
+.send input[type='text'] {
+    width: 80%;
+}
+
+.send textarea {
+    width: 85%;
+}
+
+}
